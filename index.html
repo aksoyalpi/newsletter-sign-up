@@ -5,48 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
   <!-- Sign-up form start -->
+  <div class="container">
+    <img alt="Sign up Illustration" src="./assets/images/illustration-sign-up-mobile.svg"/>
+    
+    <div class="form-container">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Stay updated!
+      <div class="bullet-points">
+        <div class="bullet-point">
+          <ion-icon name="checkmark-outline"></ion-icon>
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="bullet-point">
+          <ion-icon name="checkmark-outline"></ion-icon>
+          <p>  Measuring to ensure updates are a success
+          </p>
+        </div>
+        <div class="bullet-point">
+          <ion-icon name="checkmark-outline"></ion-icon>
+          <p>  And much more!
+          </p>
+        </div>
+      </div>
+      
 
-  Join 60,000+ product managers receiving monthly updates on:
+      <form id="form" novalidate>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="email@company.com"/>
+          <span aria-live="polite" id="email-error"></span>
+        </div>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
+        <input type="submit" value="Subscribe to monthly newsletter"/>
+      </form>
+    </div>
+  </div>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
+  <div class="confirmation">
+    Thanks for subscribing!
 
-  Thanks for subscribing!
+    A confirmation email has been sent to ash@loremcompany.com. 
+    Please open it and click the button inside to confirm your subscription.
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Dismiss message
   </div>
+  <!-- Success message end -->
 </body>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://alperenaksoy.de">Alperen Aksoy</a>.
+</footer>
 </html>
