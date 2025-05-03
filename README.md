@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/aksoyalpi/newsletter-sign-up](https://github.com/aksoyalpi/newsletter-sign-up)
+- Live Site URL: [https://aksoyalpi.github.io/newsletter-sign-up/](https://aksoyalpi.github.io/newsletter-sign-up/)
 
 ## My process
 
